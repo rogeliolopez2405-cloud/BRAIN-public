@@ -1,0 +1,49 @@
+# This repository is a controlled public export. It contains documentation and policy data
+# only — no implementation, no tests, no tooling, no world records.
+#
+# These entries exist so that ordinary local activity cannot accidentally add material that
+# does not belong in a public repository.
+
+# Secrets and environment
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.json
+secrets.json
+*token*
+*secret*
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# Private BRAIN material that must never appear here
+brain/
+cli/
+tools/
+tests/
+capabilities/
+data/
+docs/decisions/
+docs/validation/
+*.jsonl
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+scratch/

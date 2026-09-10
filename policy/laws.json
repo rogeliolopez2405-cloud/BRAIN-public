@@ -1,0 +1,239 @@
+{
+  "$comment": "THE CANONICAL LAWS. One source. Every other document references this file rather than restating the list, because a law repeated in five places is a law that will eventually disagree with itself. tests/validation.test.mjs asserts that no other file in the repository restates the set, and that every module and test named below exists.",
+  "schema_version": 1,
+  "sequence": {
+    "$comment": "The four steps, in order. Each is a different question answered by a different part of the system, and collapsing any two of them is the failure BRAIN exists to prevent.",
+    "steps": [
+      {
+        "step": "INTELLIGENCE PROPOSES",
+        "means": "A model can suggest what to do. A suggestion is not a fact and is never recorded as one."
+      },
+      {
+        "step": "EVIDENCE ESTABLISHES",
+        "means": "Only recorded observations, resolved by the ordinary rules, make something established."
+      },
+      {
+        "step": "AUTHORITY DECIDES",
+        "means": "Evidence establishes what a system does; it does not decide what may happen or what the system is called. Domain-scoped authority does."
+      },
+      {
+        "step": "REALITY VERIFIES",
+        "means": "An action is not successful because it was attempted, acknowledged, or believed. Something has to be observed afterwards."
+      }
+    ]
+  },
+  "laws": [
+    {
+      "law": "Model loss != world loss",
+      "prevents": "A system whose knowledge dies with the context window it was learned in.",
+      "enforced_by": [
+        "brain/kernel/instance.mjs",
+        "brain/kernel/classification.mjs",
+        "brain/kernel/selfmodel.mjs"
+      ],
+      "seen_in": [
+        "tests/continuity.test.mjs",
+        "tests/blankbrain.test.mjs"
+      ]
+    },
+    {
+      "law": "Provider loss != world loss",
+      "prevents": "Confusing the thing that fetches facts with the facts. Removing every adapter must lose capability and lose no world.",
+      "enforced_by": [
+        "brain/kernel/truth.mjs",
+        "brain/kernel/connect.mjs",
+        "brain/kernel/platform.mjs"
+      ],
+      "seen_in": [
+        "tests/amputation.test.mjs",
+        "tests/capabilityindependence.test.mjs"
+      ]
+    },
+    {
+      "law": "Process loss != continuity loss",
+      "prevents": "Treating a crash as an erasure. A dead process is not a world that never happened.",
+      "enforced_by": [
+        "brain/kernel/actionjournal.mjs",
+        "brain/kernel/commitment.mjs"
+      ],
+      "seen_in": [
+        "tests/actioncontinuity.test.mjs",
+        "tests/recovery.test.mjs"
+      ]
+    },
+    {
+      "law": "Registered != usable",
+      "prevents": "A manifest entry being read as a working capability.",
+      "enforced_by": [
+        "brain/kernel/connect.mjs",
+        "brain/kernel/platform.mjs"
+      ],
+      "seen_in": [
+        "tests/externalcapability.test.mjs"
+      ]
+    },
+    {
+      "law": "Available != present",
+      "prevents": "Routing consequential work on a declaration of availability rather than an observation of presence.",
+      "enforced_by": [
+        "brain/kernel/lane.mjs",
+        "brain/kernel/platform.mjs"
+      ],
+      "seen_in": [
+        "tests/laneenforcement.test.mjs"
+      ]
+    },
+    {
+      "law": "CAN != MAY",
+      "prevents": "Capability being read as permission. One field holding both makes them one question.",
+      "enforced_by": [
+        "brain/kernel/platform.mjs",
+        "brain/kernel/boundary.mjs"
+      ],
+      "seen_in": [
+        "tests/authority.test.mjs",
+        "tests/laneintegration.test.mjs"
+      ]
+    },
+    {
+      "law": "Same artifact reread != independent evidence",
+      "prevents": "Corroboration manufactured by reading one source twice.",
+      "enforced_by": [
+        "brain/kernel/provenance.mjs"
+      ],
+      "seen_in": [
+        "tests/provenance.test.mjs",
+        "tests/evidenceidentity.test.mjs"
+      ]
+    },
+    {
+      "law": "Write time != event time",
+      "prevents": "The moment a record was appended standing in for the moment the thing happened.",
+      "enforced_by": [
+        "brain/kernel/chronology.mjs"
+      ],
+      "seen_in": [
+        "tests/temporal.test.mjs",
+        "tests/worldtime.test.mjs"
+      ]
+    },
+    {
+      "law": "Ingestion order != world order",
+      "prevents": "Arrival order deciding truth, which is a rule that can be gamed by disconnecting.",
+      "enforced_by": [
+        "brain/kernel/rejoin.mjs",
+        "brain/kernel/chronology.mjs"
+      ],
+      "seen_in": [
+        "tests/partition.test.mjs"
+      ]
+    },
+    {
+      "law": "Not seen != gone",
+      "prevents": "Absence of an observation being read as an observation of absence.",
+      "enforced_by": [
+        "brain/kernel/unknowns.mjs",
+        "brain/kernel/observations.mjs",
+        "brain/kernel/sources.mjs"
+      ],
+      "seen_in": [
+        "tests/unknowns.test.mjs",
+        "tests/plausiblezero.test.mjs"
+      ]
+    },
+    {
+      "law": "Stale != false",
+      "prevents": "Discarding something that was true when observed because it is old now.",
+      "enforced_by": [
+        "brain/kernel/sources.mjs"
+      ],
+      "seen_in": [
+        "tests/currency.test.mjs",
+        "tests/causalfreshness.test.mjs"
+      ]
+    },
+    {
+      "law": "Old response != truth",
+      "prevents": "A cached answer being served as a present-tense fact.",
+      "enforced_by": [
+        "brain/kernel/knowledge.mjs",
+        "brain/kernel/sources.mjs"
+      ],
+      "seen_in": [
+        "tests/knowledgereuse.test.mjs",
+        "tests/causalfreshness.test.mjs"
+      ]
+    },
+    {
+      "law": "Owner intent != action authority",
+      "prevents": "Wanting something being read as having authorised it.",
+      "enforced_by": [
+        "brain/kernel/platform.mjs"
+      ],
+      "seen_in": [
+        "tests/verifiedaction.test.mjs",
+        "tests/ownerevidence.test.mjs"
+      ]
+    },
+    {
+      "law": "Direct deny survives transitive execution",
+      "prevents": "A nested or wrapped call laundering a refusal the direct call would have received.",
+      "enforced_by": [
+        "brain/kernel/lane.mjs"
+      ],
+      "seen_in": [
+        "tests/laneenforcement.test.mjs"
+      ]
+    },
+    {
+      "law": "Recovery is not success until verified",
+      "prevents": "A resumed action reporting completion it never established. SENT stays uncertain; EXECUTED never reads as VERIFIED.",
+      "enforced_by": [
+        "brain/kernel/actionjournal.mjs",
+        "brain/kernel/commitment.mjs"
+      ],
+      "seen_in": [
+        "tests/actioncontinuity.test.mjs",
+        "tests/commitment.test.mjs"
+      ]
+    },
+    {
+      "law": "Resumed context != current reality",
+      "prevents": "A session continuing on what it relied on when it started, after the world moved.",
+      "enforced_by": [
+        "brain/kernel/resumption.mjs",
+        "brain/kernel/truth.mjs"
+      ],
+      "seen_in": [
+        "tests/resumption.test.mjs",
+        "tests/reconcile.test.mjs"
+      ]
+    },
+    {
+      "law": "Old true != current true",
+      "prevents": "A historical fact being asserted in the present tense.",
+      "enforced_by": [
+        "brain/kernel/knowledge.mjs",
+        "brain/kernel/chronology.mjs",
+        "brain/kernel/sources.mjs"
+      ],
+      "seen_in": [
+        "tests/asof.test.mjs",
+        "tests/temporaltruth.test.mjs"
+      ]
+    },
+    {
+      "law": "The owner must not be the continuity glue",
+      "prevents": "A system that only works while one person remembers what happened. If a human has to re-explain the world after every restart, the world is in the human.",
+      "enforced_by": [
+        "brain/kernel/instance.mjs",
+        "brain/kernel/resumption.mjs",
+        "brain/kernel/selfmodel.mjs"
+      ],
+      "seen_in": [
+        "tests/continuity.test.mjs",
+        "tests/blankbrain.test.mjs"
+      ]
+    }
+  ]
+}

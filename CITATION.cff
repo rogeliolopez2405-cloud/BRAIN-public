@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: "BRAIN: Belief, Reality, Authority, Intelligence, Navigation"
+message: "If you reference this work, please cite it as below."
+type: software
+authors:
+  - given-names: Rogelio
+    family-names: Lopez
+    alias: rogeliolopez2405-cloud
+repository-code: "https://github.com/rogeliolopez2405-cloud/BRAIN-public"
+url: "https://github.com/rogeliolopez2405-cloud/BRAIN-public"
+version: 0.1.0
+date-released: "2026-09-10"
+abstract: >-
+  BRAIN is a provider-independent persistent reality, continuity, evidence, authority and
+  verification layer for AI and machine systems. It separates four steps that are commonly
+  collapsed: intelligence proposes, evidence establishes, authority decides, and reality
+  verifies. Records are append-only and superseded rather than edited; belief is resolved on
+  read rather than stored; authority is domain-scoped rather than globally ranked; and
+  outbound data crosses one enforcement point that decides before any connection opens. This
+  public repository is a controlled architecture export at classification
+  GENERAL_ARCHITECTURE_CANDIDATE, with an architecture gate of 9 of 9 criteria established. It
+  is not the complete development repository, and it is not a claim of production readiness.
+keywords:
+  - artificial intelligence
+  - agent architecture
+  - persistent world model
+  - provenance
+  - evidence
+  - authority
+  - continuity
+  - crash recovery
+  - epistemics
+license-url: "https://github.com/rogeliolopez2405-cloud/BRAIN-public/blob/main/COPYRIGHT.md"

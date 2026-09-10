@@ -1,0 +1,26 @@
+# SHA-256 manifest — BRAIN public architecture release v0.1.0
+#
+# Deterministic: files sorted by path, hashed over exact bytes. Verify with:
+#     sha256sum -c MANIFEST.sha256          (GNU coreutils)
+#     shasum -a 256 -c MANIFEST.sha256      (macOS / BSD)
+#
+# WHAT THIS PROVES: file identity and integrity for this release -- that the bytes you
+# have are the bytes that were published. It does NOT prove authorship. Anyone can compute
+# the same hashes from the same files; that is exactly what makes them useful for saying
+# "this is the version I reviewed", and exactly why they are not an authorship claim.
+#
+# MANIFEST.sha256 is excluded from itself.
+5f1f9c86872f371963bf2dcdd63a5dadb50eb41e49c24e23616d75316f10b2c8  .gitignore
+12a9dd671aa61c8c3794d2e8d37c43a7b7af775bd75c7e2e279e31f9154b3518  CITATION.cff
+8a52b71d9711926e17dd78f16071c76673c858dc929d30df46bd313849ae60fb  COPYRIGHT.md
+7f081a97b9f30d77717a9c5743dadea303dc7f68967a079822027754c89a7da7  LIMITATIONS.md
+3abae469aab5da088b98373b1e0a1c559849044eed78e5848a5ba976585723de  PROVENANCE.md
+8e5c66736ee17d48118f33ac50ffca04d9858c2f524a3c9ee337ef6ba387ca4a  PUBLIC-SCOPE.md
+620e486835c0e8c69b6a4462b4ff43827f143c0a9a1d9f79a2a9e03325833d6a  README.md
+9a109ea0b18efb5cd4c78ad1fb8522ddf9b4ae1ad959a3d048a4f9c1d4615a2f  VALIDATION-RESULTS.md
+e38c7b293eded82c442eb0534cd7603f9e0631ff3870d48473031d6450831d75  docs/DIAGRAM.md
+f460448864127186123cea9d82e1ead807fff7609899ac66d7ab601302b2770b  docs/FAILURE-MODES.md
+fada7530ecf14fe19fc8256ece72bf5fc1a82cc2f9c2b750ee4e6fb88e978e98  docs/SPECIFICATION.md
+72405ed7502cedc707ddc8520fb11180fc44ffff658bc26ce0d3177ae680b1d5  docs/TRUST-MODEL.md
+4271dd37a5dcd0736f6106167bfd5bff0c25c78e614520e76743f281888f8ea3  policy/laws.json
+41254e47e9ca073a623f49d6f4a986f3ec51426699db18c47c98c8432a5f9c89  policy/limitations.json
