@@ -1,0 +1,115 @@
+<!-- Source for assets/brain-social-preview.png (1280 × 640).
+     Regenerate:  chrome --headless --screenshot --window-size=1280,640 brain-social-preview.html
+     No remote fonts, no imagery, no logos, no third-party marks. -->
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  :root{
+    --ink:      #0A0C10;   /* near-black, slightly cool — not pure black */
+    --paper:    #F2F5F7;
+    --muted:    #7A8794;
+    --rule:     #1E242C;
+    --signal:   #5EC8D8;   /* one accent, used sparingly */
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ width:1280px; height:640px; }
+  body{
+    background: var(--ink);
+    color: var(--paper);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-feature-settings: "kern" 1;
+    -webkit-font-smoothing: antialiased;
+    padding: 68px 84px 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* A faint engineering-drawing grid. Structure, not decoration — it stops the
+     large empty areas from reading as an unfinished slide. */
+  .grid{
+    position:absolute; inset:0;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,.028) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.028) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 100% 80% at 30% 40%, #000 40%, transparent 100%);
+  }
+  .edge{
+    position:absolute; left:0; top:0; bottom:0; width:5px;
+    background: var(--signal);
+  }
+  .content{ position:relative; }
+
+  .eyebrow{
+    font-family: Consolas, "Cascadia Mono", ui-monospace, monospace;
+    font-size: 15px; letter-spacing: .30em; text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1{
+    font-size: 150px; line-height: .92; font-weight: 700;
+    letter-spacing: -.035em; margin: 26px 0 18px;
+  }
+
+  .expansion{
+    font-size: 19px; letter-spacing: .19em; text-transform: uppercase;
+    color: var(--muted); font-weight: 500;
+  }
+
+  hr{ border:0; border-top:1px solid var(--rule); margin: 34px 0 30px; }
+
+  .tagline{ font-size: 41px; line-height: 1.24; font-weight: 600; letter-spacing:-.012em; }
+  .tagline .stays{ color: var(--signal); }
+
+  .pipeline{
+    font-family: Consolas, "Cascadia Mono", ui-monospace, monospace;
+    font-size: 17.5px; letter-spacing: .055em; color: #96A3AF;
+    margin-top: 30px;
+  }
+  .pipeline .arrow{ color: #4A5661; padding: 0 .5em; }
+
+  footer{
+    position:relative; display:flex; align-items:center;
+    justify-content:space-between; gap: 24px;
+    font-family: Consolas, "Cascadia Mono", ui-monospace, monospace;
+    font-size: 14.5px; color: var(--muted);
+  }
+  .chip{
+    border:1px solid var(--rule); border-radius:3px;
+    padding: 9px 15px; letter-spacing:.11em; color:#B8C4CE;
+  }
+  .ver{ margin-left:16px; letter-spacing:.11em; }
+  .by{ text-align:right; letter-spacing:.05em; }
+  .by b{ color:#B8C4CE; font-weight:600; }
+</style>
+
+<div class="grid"></div>
+<div class="edge"></div>
+
+<div class="content">
+  <div class="eyebrow">Public architecture release</div>
+  <h1>BRAIN</h1>
+  <div class="expansion">Belief · Reality · Authority · Intelligence · Navigation</div>
+
+  <hr>
+
+  <div class="tagline">
+    The AI can be replaced.<br>
+    <span class="stays">The BRAIN stays.</span>
+  </div>
+
+  <div class="pipeline">
+    Evidence<span class="arrow">→</span>Continuity<span class="arrow">→</span>Authority<span
+    class="arrow">→</span>Action<span class="arrow">→</span>Verification
+  </div>
+</div>
+
+<footer>
+  <div>
+    <span class="chip">GENERAL_ARCHITECTURE_CANDIDATE</span><span class="ver">v0.1.0</span>
+  </div>
+  <div class="by">Creator / architect<br><b>Rogelio Lopez</b></div>
+</footer>

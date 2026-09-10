@@ -9,6 +9,12 @@ The AI can be replaced. The BRAIN stays.
 > **PUBLIC ARCHITECTURE RELEASE**
 > No open-source license has been granted. See [COPYRIGHT.md](COPYRIGHT.md).
 
+**Status:** `GENERAL_ARCHITECTURE_CANDIDATE` · gate 9 of 9 ·
+[what that means](#current-classification) ·
+[what is unproven](LIMITATIONS.md) ·
+[**challenge a claim**](#challenge-it)
+**Creator / architect:** Rogelio Lopez
+
 ---
 
 ## What this is
@@ -137,18 +143,31 @@ understand, critique and challenge the architecture.
 
 ## Challenge it
 
-This release exists to invite technical challenge, not agreement. The most useful thing a
-reader can do is disagree with something specific:
+Think a claim is too strong? Find an architectural contradiction? Think
+`GENERAL_ARCHITECTURE_CANDIDATE` is not supported by what is published here?
 
-- Read a claim in [docs/SPECIFICATION.md](docs/SPECIFICATION.md) and argue the evidence does not
-  support it.
-- Find a failure mode in [docs/FAILURE-MODES.md](docs/FAILURE-MODES.md) whose "remaining limit"
-  is understated.
-- Show that a limitation in [LIMITATIONS.md](LIMITATIONS.md) is broader than stated — for
-  example, that the egress gate can be bypassed by *trusted* code that does ask it.
-- Argue that `GENERAL_ARCHITECTURE_CANDIDATE` is too strong for the evidence shown.
+**[Open an architecture challenge](https://github.com/rogeliolopez2405-cloud/BRAIN-public/issues/new?template=architecture-challenge.md)**
+and include:
 
-Open an issue. Being wrong in public is the point of publishing.
+- the claim being challenged
+- expected behavior
+- a counterexample, failure scenario, or reasoning
+- reproduction steps, where applicable
+- severity and architectural consequence
+
+Places worth attacking first:
+
+- A claim in [docs/SPECIFICATION.md](docs/SPECIFICATION.md) where you think the evidence does
+  not support it.
+- A failure mode in [docs/FAILURE-MODES.md](docs/FAILURE-MODES.md) whose "remaining limit" is
+  understated.
+- A limitation in [LIMITATIONS.md](LIMITATIONS.md) that is broader than stated — for example,
+  that the egress gate can be bypassed by *trusted* code that does ask it.
+- The classification itself. If 9 of 9 does not justify `GENERAL_ARCHITECTURE_CANDIDATE` on the
+  material published here, that is the most useful issue anyone could file.
+
+Praise is not useful here. Falsification is. Being wrong in public is the point of
+publishing.
 
 ## Authorship
 
