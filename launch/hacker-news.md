@@ -6,11 +6,15 @@
 
 ## Title
 
-Suggested:
+**Recommended default:**
+
+> BRAIN – a persistent reality/authority layer designed to survive model replacement
+
+**Optional alternative**, only if you accept the objection below:
 
 > Show HN: BRAIN – a persistent reality/authority layer designed to survive model replacement
 
-**Verified against the published material.** Every part of that title is supported:
+**Verified against the published material.** Every part of the title is supported:
 
 - *"persistent reality/authority layer"* — the README's own description is "persistent reality,
   continuity, evidence, authority and verification layer".
@@ -18,19 +22,18 @@ Suggested:
   the nine gate criteria and is recorded as established. "Designed to" is the right strength:
   it claims intent and internal evidence, not independent proof.
 
-**One convention problem, worth deciding before you post.** "Show HN" is conventionally for
-work others can run and play with. This repository is documentation, policy data and frozen
-results — there is nothing to execute. Some readers will say so, and they will be right on the
-convention even if the content is substantial.
+**Why the plain title is the default.** "Show HN" is conventionally for work others can run
+and play with. This repository is documentation, policy data and frozen results — **there is
+nothing to execute.** Readers who object to a Show HN with no runnable artifact are right on
+the convention, regardless of how substantial the content is, and arguing that in the thread
+spends credibility on the wrong question.
 
-Two options:
+So: post it as a normal submission. The content stands on its own and the title is accurate.
 
-1. **Keep "Show HN"** and pre-empt it in the first line of the body (the draft below does
-   this). Honest, and it puts the objection where you control the framing.
-2. **Drop "Show HN"** and post as a normal submission:
-   > BRAIN – a persistent reality/authority layer designed to survive model replacement
-
-Option 2 avoids the argument entirely. Option 1 gets more visibility if it lands. Your call.
+**If you use the "Show HN" variant instead**, pre-empt the objection in the first line of the
+body — the draft below already opens by saying there is nothing to run. That is honest and
+puts the objection where you control the framing. It may reach further if it lands, at the
+cost of a fight about categorisation you do not need to have.
 
 ---
 

@@ -21,18 +21,29 @@
 >
 > https://github.com/rogeliolopez2405-cloud/BRAIN-public
 
-**Length check:** ~530 characters. Fits the 280 limit only on X Premium. If posting on a
-standard account, use this cut instead:
+**Length check: 530 characters.** Over the 280 limit — this version needs X Premium.
+
+### Standard account version — VERIFIED 276 characters
+
+Counted programmatically, including the full 54-character URL and both blank lines.
 
 > The AI can be replaced. The BRAIN stays.
 >
-> First public architecture release of BRAIN — a provider-independent continuity, evidence,
-> authority and verification layer for AI systems.
+> BRAIN: an architecture for persistent continuity, evidence, authority and verification in AI systems.
 >
-> Architecture only, not the implementation. Known limitations published.
+> Architecture release, not the full implementation.
 >
 > Tell me where it breaks:
 > https://github.com/rogeliolopez2405-cloud/BRAIN-public
+
+| | |
+|---|---|
+| Raw characters | **276** / 280 — fits, 4 to spare |
+| As X counts it | **245** / 280 — X wraps any URL to a fixed 23 chars |
+
+The earlier draft here claimed to fit and did not: it was **334 raw / 303 as X counts
+it**, over on both measures. Re-count before editing — the margin above is 4 characters,
+so almost any addition breaks it.
 
 ---
 
