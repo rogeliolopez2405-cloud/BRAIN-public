@@ -10,6 +10,7 @@
 # "this is the version I reviewed", and exactly why they are not an authorship claim.
 #
 # MANIFEST.sha256 is excluded from itself.
+ed5f7454da71cab6aa00b63d2b2263a9fcc832666eec2b65f6cf7f7a29b8262a  .gitattributes
 5f1f9c86872f371963bf2dcdd63a5dadb50eb41e49c24e23616d75316f10b2c8  .gitignore
 12a9dd671aa61c8c3794d2e8d37c43a7b7af775bd75c7e2e279e31f9154b3518  CITATION.cff
 8a52b71d9711926e17dd78f16071c76673c858dc929d30df46bd313849ae60fb  COPYRIGHT.md

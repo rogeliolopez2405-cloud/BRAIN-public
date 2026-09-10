@@ -1,0 +1,10 @@
+# Byte-exact checkout on every platform.
+#
+# MANIFEST.sha256 hashes the exact bytes of each published file. Git's default
+# core.autocrlf on Windows rewrites LF to CRLF on checkout, which changes every hash and
+# makes `sha256sum -c MANIFEST.sha256` fail for reasons that have nothing to do with
+# integrity. An integrity manifest that fails on a major platform is worse than no manifest,
+# because the reader cannot tell a line-ending conversion from tampering.
+#
+# `-text` disables all end-of-line conversion, so what you check out is what was hashed.
+* -text
